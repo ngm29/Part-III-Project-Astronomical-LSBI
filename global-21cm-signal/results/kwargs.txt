@@ -1,0 +1,4 @@
+batch_size: 451
+epochs: 10
+input_shape: 8
+layer_sizes: [14, 14, 14, 14]
