@@ -1,6 +1,8 @@
 # Astronomical linear simulation based inference
 Code and plots for the NST Physics Part III project "Astronomical Linear Simulation-based Inference"
 
+Web reference: [Galileo -  Part III Projects supervised by Will Handley](https://www.mrao.cam.ac.uk/~wh260/Galileo)
+
 
 
 ## Abstract
