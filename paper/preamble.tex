@@ -1,0 +1,176 @@
+
+% packages
+    
+
+\usepackage{amsmath,amssymb,amsfonts, bm, amsthm}
+\usepackage{tensor,cancel}
+\usepackage[Symbolsmallscale]{upgreek}
+\usepackage{alphabeta}
+\usepackage{lipsum}
+
+\usepackage{physics,siunitx}
+
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage{hyperref}
+    \hypersetup{
+        colorlinks=true,
+        linkcolor=blue,
+        citecolor=blue,
+        filecolor=Orange,      
+        urlcolor=red,
+        pdftitle={Overleaf Example},
+        pdfpagemode=FullScreen,
+        }
+
+\usepackage{graphicx}
+    \graphicspath{{figures/}}
+ 
+ \usepackage{tikz,pgfplots,tikz-3dplot}
+ 	\pgfplotsset{compat=1.15}
+    \usetikzlibrary{arrows,decorations,backgrounds,petri,3d}
+    \usetikzlibrary{shapes.arrows}
+	\usetikzlibrary{shapes.geometric, shapes.arrows, positioning, math}
+	\tikzset{MyArrow/.style={single arrow, draw, minimum width=5ex, minimum height=10ex, inner sep=1ex, text height=1ex, text depth=0ex, single arrow head extend=1ex} }
+    
+\usepackage{comment}
+
+% commands
+
+
+\newcommand{\ensuremathcommand}[2]{\let#2#1\renewcommand{#1}{\ensuremath{#2}}}
+
+\newcommand{\txt}[1]{_\text{#1}}
+
+\newcommand{\const}{\ensuremath{\mathrm{const}}}
+
+\newcommand{\half}{\ensuremath{\tfrac{1}{2}}}
+
+\newcommand{\lrp}[1]{\ensuremath{\left( #1 \right)}}
+\newcommand{\lrb}[1]{\ensuremath{\left[ #1 \right]}}
+\newcommand{\lrB}[1]{\ensuremath{\left\{ #1 \right\}}}
+
+\newcommand{\Naturals}{\ensuremath{\mathbb{N}}}
+\newcommand{\Integers}{\ensuremath{\mathbb{Z}}}
+\newcommand{\Rationals}{\ensuremath{\mathbb{Q}}}
+\newcommand{\Reals}{\ensuremath{\mathbb{R}}}
+\newcommand{\Complex}{\ensuremath{\mathbb{N}}}
+
+\DeclareMathOperator\CMB{C}
+\DeclareMathOperator\PRM{P}
+\newcommand{\Cmb}[2]{\ensuremath{\sideset{^{#1}}{_{#2}} \CMB}}
+\newcommand{\Prm}[2]{\ensuremath{\sideset{^{#1}}{_{#2}} \PRM}}
+
+\newcommand{\Prob}[1]{\ensuremath{\mathrm{P} \!\!\: \left( #1 \right)}}
+\newcommand{\Cprob}[2]{\ensuremath{\mathrm{P} \!\!\: \left( #1 \,\middle\vert\, #2 \right)}}
+\newcommand{\Expc}[1]{\ensuremath{\mathrm{E} \!\!\: \left[ #1 \right]}}
+\newcommand{\Var}[1]{\ensuremath{\mathrm{V} \!\!\: \left[ #1 \right]}}
+\newcommand{\stdv}[1]{\ensuremath{\upsigma \!\!\: \left( #1 \right)}}
+\newcommand{\covar}[2]{\ensuremath{\upsigma \!\!\: \left( #1,#2 \right)}}
+\newcommand{\correl}[2]{\ensuremath{\uprho \!\!\: \left( #1,#2 \right)}}
+\newcommand{\mean}[1]{\ensuremath{\bar{#1}}}
+
+\let\vect\vec
+\newcommand{\newvec}[1]{\ensuremath{\bm{#1}}}
+\let\vec\newvec
+\newcommand{\Vect}[1]{\ensuremath{\overrightarrow{#1}}}
+
+\newcommand{\mat}[1]{\ensuremath{\textsf{\MakeUppercase #1}}}
+\newcommand{\Mat}[1]{\left( \, \begin{smallmatrix} #1 \end{smallmatrix} \, \right)}
+\newcommand{\MAT}[1]{\left( \, \begin{matrix} #1 \end{matrix} \, \right)}
+
+\newcommand{\Det}[1]{\ensuremath{\mathrm{det}\!\!\:\left( \mat{#1} \right)}}
+\newcommand{\DET}[1]{\left| \, \begin{matrix} #1 \end{matrix} \, \right|}
+\DeclareMathOperator{\adj}{adj}
+\newcommand{\Adj}[1]{\ensuremath{\adj\!\!\:\left( \mat{#1} \right)}}
+
+\newcommand{\tdv}[1]{\ensuremath{\dot{#1}}}
+\newcommand{\ttdv}[1]{\ensuremath{\ddot{#1}}}
+\newcommand{\ndv}[2]{\ensuremath{#1^{(#2)}}}
+\renewcommand{\dv}[3][]{\ensuremath{\frac{\mathrm{d}^{#1} {#2}}{\mathrm{d}{#3}^{#1}}\;\!}}
+\renewcommand{\pdv}[3][]{\frac{\partial^{#1} {#2}}{\partial {#3}^{#1}}}
+\renewcommand{\dd}[2][]{\ensuremath{\frac{\mathrm{d}^{#1}}{\mathrm{d}{#2}^{#1}}\;\!}}
+\newcommand{\pdd}[2][]{\frac{\partial^{#1}}{\partial{#2}^{#1}}}
+
+\newcommand{\dif}{\mathrm{d}}
+\newcommand{\del}{\updelta}
+\newcommand{\Dif}{\mathrm{\Delta}}
+\newcommand{\pd}{\partial}
+
+\newcommand{\Exp}[2][]{\exp#1 \!\!\: \left( #2 \right)}
+\newcommand{\EXP}[2][]{\exp#1 \! \left[ #2 \right]}
+\newcommand{\Erf}[2][]{\erf#1 \!\!\: \left( #2 \right)}
+\newcommand{\Ln}[2][]{\ln#1 \!\!\: \left( #2 \right)}
+\newcommand{\Log}[2][]{\log#1 \!\!\: \left( #2 \right)}
+\newcommand{\Sin}[2][]{\sin#1 \left( #2\right)}
+\newcommand{\Cos}[2][]{\cos#1 \left( #2 \right)}
+\newcommand{\Tan}[2][]{\tan#1 \left( #2 \right)}
+\newcommand{\Sinh}[2][]{\sinh#1 \left( #2 \right)}
+\newcommand{\Cosh}[2][]{\cosh#1 \left( #2 \right)}
+\newcommand{\Tanh}[2][]{\tanh#1 \left( #2 \right)}
+\DeclareMathOperator{\sinc}{sinc}
+\newcommand{\Sinc}[2][]{\sinc#1 \left( #2\right)}
+
+
+% shortcuts
+
+\renewcommand{\a}{}
+\renewcommand{\b}{}
+\renewcommand{\c}{\cdot}
+\renewcommand{\d}{\mathrm{d}}
+\newcommand{\e}{\en}
+\newcommand{\f}{\frac}
+\newcommand{\g}{}
+\newcommand{\h}{\hbar}
+\let\itext\i
+\renewcommand{\i}{\im}
+\let\jtext\j
+\renewcommand{\j}{\jm}
+\renewcommand{\k}{}
+\renewcommand{\l}{\ell}
+\newcommand{\m}[1]{\overline{#1}}
+\newcommand{\n}{\widetilde}
+\renewcommand{\o}{}
+\newcommand{\p}{}
+\newcommand{\q}{\quad}
+\renewcommand{\qq}{\qquad}
+\renewcommand{\r}{}
+\newcommand{\s}{\sqrt}
+\renewcommand{\t}{\times}
+\renewcommand{\u}{}
+\renewcommand{\v}{\vec}
+\newcommand{\w}{}
+\newcommand{\x}{}
+\newcommand{\y}{}
+\newcommand{\z}{}
+\newcommand{\A}{}
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\C}{}
+\newcommand{\D}{\mathcal{D}\txt{KL}}
+\newcommand{\E}{}
+\newcommand{\F}{}
+\newcommand{\G}{}
+\renewcommand{\H}{}
+\newcommand{\I}{\mathcal{I}}
+\newcommand{\J}{\mathcal{J}}
+\newcommand{\K}{}
+\renewcommand{\L}{\mathcal{L}}
+\newcommand{\M}{\mathcal{M}}
+	\newcommand{\MN}{\mathcal{MN}}
+\newcommand{\N}{\mathcal{N}}
+\renewcommand{\O}{\mathcal{O}}
+\renewcommand{\P}{\mathcal{P}}
+\newcommand{\Q}{}
+\newcommand{\R}{\mathcal{R}}
+\renewcommand{\S}{\mathcal{S}}
+\newcommand{\T}{\mathrm{T}}
+\newcommand{\U}{}
+\newcommand{\V}{}
+\newcommand{\W}{\mathcal{W}}
+\newcommand{\X}{}
+\newcommand{\Y}{}
+\newcommand{\Z}{\mathcal{Z}}
+\newcommand{\1}[1]{\frac{1}{#1}}
+
+\newcommand{\cnj}[1]{\widetilde{#1}}
+
