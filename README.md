@@ -1,7 +1,9 @@
-# Astronomical linear simulation based inference
-Code and plots for the NST Physics Part III project "Astronomical Linear Simulation-based Inference"
+# Cosmological Parameter Estimation with Sequential Linear Simulation-based Inference
+Code and plots for the paper "Cosmological Parameter Estimation with Sequential Linear Simulation-based Inference" by N. G. Mediato-Diaz and W. J. Handley.
 
-Web reference: [Galileo -  Part III Projects supervised by Will Handley](https://www.mrao.cam.ac.uk/~wh260/Galileo)
+Web reference: 
+
+Project page: [Galileo -  Part III Projects supervised by Will Handley](https://www.mrao.cam.ac.uk/~wh260/Galileo)
 
 
 
@@ -15,6 +17,8 @@ We develop the framework of Linear Simulation-based Inference (LSBI), an applica
 * lsbi - [GitHub](https://github.com/handley-lab/lsbi/tree/master), [Documenation](https://lsbi.readthedocs.io/en/latest/)
 * globalemu - [GitHub](https://github.com/htjb/globalemu), [Documenation](https://globalemu.readthedocs.io/en/latest/)
 * cmbemu - [GitHub](https://github.com/htjb/cmbemu/tree/main)
+* cosmopower-jax - [GitHub](https://github.com/dpiras/cosmopower-jax)
+* dynesty - [GitHub](https://github.com/joshspeagle/dynesty), [Documentation](https://dynesty.readthedocs.io/en/stable/)
 * getdist - [GitHub](https://github.com/cmbant/getdist), [Documentation](https://getdist.readthedocs.io/en/latest/)
 
 ## Citations
@@ -22,5 +26,9 @@ We develop the framework of Linear Simulation-based Inference (LSBI), an applica
 Handley et al, (2024) lsbi: Linear Simulation Based Inference.
 
 Bevins, H., Handley, W. J., Fialkov, A., Acedo, E. D. L., and Javid, K. (2021). GLOBALEMU: A novel and robust approach for emulating the sky-averaged 21-cm signal from the cosmic dawn and epoch of reionisation. arXiv:2104.04336
+
+Piras, D. and Mancini, A.S. (2023). CosmoPower-JAX: high-dimensional Bayesian inference with differentiable cosmological emulators. arXiv preprint arXiv:2305.06347.
+
+Speagle, J.S. (2020). dynesty: a dynamic nested sampling package for estimating Bayesian posteriors and evidences. Monthly Notices of the Royal Astronomical Society, 493(3), pp.3132-3158.
 
 Lewis, A. (2019). GetDist: a Python package for analysing Monte Carlo samples. arXiv preprint arXiv:1910.13970.
