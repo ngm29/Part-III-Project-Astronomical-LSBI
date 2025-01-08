@@ -1,7 +1,7 @@
 # Cosmological Parameter Estimation with Sequential Linear Simulation-based Inference
 Code and plots for the paper "Cosmological Parameter Estimation with Sequential Linear Simulation-based Inference" by N. G. Mediato-Diaz and W. J. Handley.
 
-Web reference: 
+Web reference: [arXiv: 2501.03921](https://doi.org/10.48550/arXiv.2501.03921)
 
 Project page: [Galileo -  Part III Projects supervised by Will Handley](https://www.mrao.cam.ac.uk/~wh260/Galileo)
 
